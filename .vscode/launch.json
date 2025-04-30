@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug MonitoringSystemForCitadel",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/MonitoringSystemForCitadel",  // Путь к исполняемому файлу
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",  // Убедитесь, что путь к GDB правильный
+            "preLaunchTask": "build MonitoringSystemForCitadel",  // Задача для сборки
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "sourceFileMap": {
+                "/mnt/c": "C:\\",
+                "/home": "C:\\Users\\YourUserName"
+            }
+        }
+    ]
+}

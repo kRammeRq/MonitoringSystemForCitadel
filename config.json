@@ -1,0 +1,24 @@
+{
+  "settings": {
+    "period": "30"
+  },
+  "metrics": [
+    {
+      "type": "cpu",
+      "ids": [ 0, 1 ]
+    },
+    {
+      "type": "memory",
+      "spec": [ "used", "free" ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "console"
+    },
+    {
+      "type": "log",
+      "path": "/home/krammer/file.log"
+    }
+  ]
+}
